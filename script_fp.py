@@ -7,9 +7,19 @@ import glob
 
 
 def film_suivant(personid):
-    films_vus = get_films_vus(personid)
-    # utiliser une difference de "set" pour trouver le prochain film a voir
-    return "FILM_A_VOIR" 
+    films_vus = set(get_films_vus(personid))
+    films_catalog = set(get_ensemble_films_catalog())
+    a_voir = list(films_catalog-films_vus)[-1]
+    return a_voir
+
+
+def get_ensemble_films_catalog():
+    ensemble_films = []
+    films = json.load(open('./catalog.json'))
+    for section in films.keys():
+        ensemble_films += films[section]
+    return ensemble_films
+     
 
 def get_films_vus(personid):
     # utilisez la methode readlines
