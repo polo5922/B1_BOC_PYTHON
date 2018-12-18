@@ -1,6 +1,9 @@
 #!/usr/bin/python
 
 import json
+import os
+import sys
+import glob
 
 
 def film_suivant(personid):
@@ -15,26 +18,32 @@ def get_films_vus(personid):
 
 def get_persons_list():
     # utilisez le module glob avec le pattern *.txt
-    return ["jessy", "andy"]
+    persons = [ os.path.basename(f).split('.')[0] for f in glob.glob('filmotheque/*.vu') ]
+    # la ligne precedente revient au meme que :
+    # persons = []
+    # for f in glob.glob('filmotheque/*.vu'):
+    #     name = os.path.basename(f).split('.')[0]
+    #     persons.append(name)
+    return persons
 
 
 def get_nb_films(section=None):
     nbfilms = 0
     films = json.load(open('./catalog.json'))
-    print "Sections du catalogue: ", films.keys()
+    #print "Sections du catalogue: ", films.keys()
     for section in films.keys():
-        print "Section: ", section
+        #print "Section: ", section
         section_nb_films = len(films[section])
-        print "Nb films dans la section: ", section_nb_films
+        #print "Nb films dans la section: ", section_nb_films
         nbfilms += section_nb_films
-    print "Nb total de films : ", nbfilms
+    #print "Nb total de films : ", nbfilms
     return nbfilms
 
 
 def main():
     print "Nb total de films dans le catalogue : ", get_nb_films()
     for p in get_persons_list():
-        print "La personne %s a vu %s films"%(p, 0)
+        print "La personne %s a vu %s films"%(p, 'XXXX')
         print "  => elle devra regarder le film suivant : %s"%(film_suivant(p))
 
 
