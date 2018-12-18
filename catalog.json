@@ -1,5 +1,6 @@
 {
-   "horror":[
+  "movie":{
+    "horror":[
       "babysitter",
       "saw",
       "american_nightmare",
@@ -22,4 +23,5 @@
       "tu_ne_tueras_point",
       "fight_club"
    ]
+  }
 }
