@@ -1,5 +1,5 @@
 1/ afficher le nombre de films dans le catalogue    make
-2/ afficher 1 + la liste des personnes
+2/ afficher 1 + la liste des personnes  make
 3/ pour chaque personne, afficher le nombre de films que cette personne aura vu
 4/ pour chaque personne, afficher le prochain film à voir, en selectionnant le premier venu de la liste de films qui n'aura pas été vu
 5/ Transformer ce script en un code orienté objet

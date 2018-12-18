@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import json
 import os
@@ -42,10 +42,10 @@ def get_nb_films(section=None):
 
 
 def main():
-    print "Nb total de films dans le catalogue : ", get_nb_films()
+    print("Nb total de films dans le catalogue : ", get_nb_films())
     for p in get_persons_list():
-        print "La personne %s a vu %s films"%(p, len(get_films_vus(p)))
-        print "  => elle devra regarder le film suivant : %s"%(film_suivant(p))
+        print("La personne %s a vu %s films"%(p, len(get_films_vus(p))))
+        print("  => elle devra regarder le film suivant : %s"%(film_suivant(p)))
 
 
 if __name__ == '__main__':
