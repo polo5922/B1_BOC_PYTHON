@@ -9,3 +9,8 @@ def get_nb_films(section=None):
         nbfilms += section_nb_films
     print "Nb total de films : ", nbfilms
     return nbfilms
+
+def get_persons_list():
+    import glob
+    glob.glob
+    return ["jessy", "andy"]
