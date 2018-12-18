@@ -19,6 +19,11 @@ def get_films_vus(personid):
 def get_persons_list():
     # utilisez le module glob avec le pattern *.txt
     persons = [ os.path.basename(f).split('.')[0] for f in glob.glob('filmotheque/*.vu') ]
+    # la ligne precedente revient au meme que :
+    # persons = []
+    # for f in glob.glob('filmotheque/*.vu'):
+    #     name = os.path.basename(f).split('.')[0]
+    #     persons.append(name)
     return persons
 
 
