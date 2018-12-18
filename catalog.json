@@ -23,5 +23,17 @@
       "tu_ne_tueras_point",
       "fight_club"
    ]
-  }
+ },
+ "show":{
+   "comics":[
+     "a good place"
+   ],
+   "sf":[
+     "Doctor Who"
+   ],
+   "action":[
+     "Game Of Throne",
+     "The walking Dead"
+   ]
+ }
 }
