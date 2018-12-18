@@ -1,5 +1,25 @@
-{"horror" : ["babysitter", "saw", "american_nightmare", "halloween", "american_horror_story", "blair_witch_project", "" ],
- "humour" : ["dumb_and_dumber", "the_mask", "deadpool", "oss117", "american_pie", "la_cite_de_la_peur"],
- "action" : ["fast_and_furious", "expandable", "tu_ne_tueras_point", "fight_club"]
+{
+   "horror":[
+      "babysitter",
+      "saw",
+      "american_nightmare",
+      "halloween",
+      "american_horror_story",
+      "blair_witch_project",
+      ""
+   ],
+   "humour":[
+      "dumb_and_dumber",
+      "the_mask",
+      "deadpool",
+      "oss117",
+      "american_pie",
+      "la_cite_de_la_peur"
+   ],
+   "action":[
+      "fast_and_furious",
+      "expandable",
+      "tu_ne_tueras_point",
+      "fight_club"
+   ]
 }
-
