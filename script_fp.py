@@ -13,7 +13,8 @@ def film_suivant(personid):
 
 def get_films_vus(personid):
     # utilisez la methode readlines
-    return []
+    personfile = "filmotheque/%s.vu"%(personid)
+    return open(personfile).readlines()
     
 
 def get_persons_list():
@@ -43,7 +44,7 @@ def get_nb_films(section=None):
 def main():
     print "Nb total de films dans le catalogue : ", get_nb_films()
     for p in get_persons_list():
-        print "La personne %s a vu %s films"%(p, 'XXXX')
+        print "La personne %s a vu %s films"%(p, len(get_films_vus(p)))
         print "  => elle devra regarder le film suivant : %s"%(film_suivant(p))
 
 
