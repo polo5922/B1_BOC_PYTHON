@@ -9,7 +9,7 @@ import random
 
 def film_suivant(personid):
     films_vus = get_films_vus(personid)
-    film_suivant = random.randint("%s"%(films_vus))
+    film_suivant = random.randint()
     return film_suivant
 
 def get_films_vus(personid):
