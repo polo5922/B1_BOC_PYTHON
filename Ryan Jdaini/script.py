@@ -9,7 +9,7 @@ def film_suivant(personid):
     return "FILM_A_VOIR"
 
 def get_films_vus(personid):
-    jsonFile = json.loads(open('../catalog.json').read())
+    # readlines
     return []
 
 
