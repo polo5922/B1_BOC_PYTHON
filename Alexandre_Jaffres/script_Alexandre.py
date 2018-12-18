@@ -1,3 +1,7 @@
+import json
+import glob
+
+
 def get_nb_films(section=None):
     nbfilms = 0
     films = json.load(open('./catalog.json'))
