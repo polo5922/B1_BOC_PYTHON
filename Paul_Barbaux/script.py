@@ -11,5 +11,6 @@ def get_nb_films():
 def main():
     print "Nb total de films dans le catalogue :", get_nb_films()
 
+
 if __name__ == '__main__':
     main()
